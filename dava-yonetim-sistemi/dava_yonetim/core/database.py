@@ -31,7 +31,7 @@ class Database:
     def connect(self) -> sqlite3.Connection:
         """Veritabanına bağlan"""
         if self.conn is None:
-            self.conn = sqlite3.connect(self.db_path)
+            self.conn = sqlite3.connect(self.db_path, check_same_thread=False)
             self.conn.row_factory = sqlite3.Row
         return self.conn
 
