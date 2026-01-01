@@ -1,0 +1,22 @@
+# Dava Yönetim Sistemi - Gereksinimler
+
+# Dosya izleme
+watchdog>=3.0.0
+
+# Tesseract OCR için Python wrapper (opsiyonel, direkt tesseract kullanıyoruz)
+# pytesseract>=0.3.10
+
+# Veritabanı (built-in sqlite3 kullanılıyor, ek paket gerekmez)
+
+# PDF işleme (Tesseract ile entegrasyon için)
+# PyPDF2>=3.0.0  # Opsiyonel, sadece OCR yapıyoruz
+
+# Loglama (built-in logging kullanılıyor)
+
+# Diğer standart kütüphaneler (Python 3.9+ ile gelir)
+# - pathlib
+# - json
+# - datetime
+# - sqlite3
+# - subprocess
+# - argparse

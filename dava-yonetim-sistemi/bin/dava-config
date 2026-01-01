@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+"""
+Dava Yönetim Sistemi - Konfigürasyon
+"""
+
+import sys
+from pathlib import Path
+
+# Proje dizinini Python path'e ekle
+project_dir = Path(__file__).parent.parent
+sys.path.insert(0, str(project_dir))
+
+from dava_yonetim.cli import CLI
+
+
+def main():
+    """Konfigürasyon"""
+    cli = CLI()
+    cli.run(['config'] + sys.argv[1:])
+
+
+if __name__ == '__main__':
+    main()
